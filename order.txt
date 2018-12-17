@@ -1,0 +1,24 @@
+You have ordered : 
+
+Product : Lily
+Quantity : 1
+Product : Hibiscus
+Quantity : 3
+You have ordered : 
+Product : Tulip
+Quantity : 6
+Product : Lily
+Quantity : 4
+Pick-up date: 21-12-2018
+Pick-up time: 06:00
+Address: abc
+
+You have ordered : 
+Product : Rose
+Quantity : 2
+Product : Lily
+Quantity : 2
+Pick-up date: 11-12-2018
+Pick-up time: 12:51
+Address: hi
+
