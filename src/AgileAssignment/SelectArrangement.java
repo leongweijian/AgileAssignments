@@ -1,0 +1,506 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package AgileAssignment;
+
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author ThisPc
+ */
+public class SelectArrangement extends javax.swing.JFrame {
+
+    /**
+     * Creates new form SelectArrangement
+     */
+    public SelectArrangement() {
+        initComponents();
+        ImageIcon myimage = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("basket.jpg")));
+        Image basket = myimage.getImage();
+        Image basket2 = basket.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i = new ImageIcon(basket2);
+        jLabel1.setIcon(i);
+        
+        ImageIcon myimage2 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("bouquet.jpg")));
+        Image bouquet = myimage2.getImage();
+        Image bouquet2 = bouquet.getScaledInstance(jLabel2.getWidth(), jLabel2.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i2 = new ImageIcon(bouquet2);
+        jLabel2.setIcon(i2);
+        
+        ImageIcon myimage3 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("vase.jpeg")));
+        Image vase = myimage3.getImage();
+        Image vase2 = vase.getScaledInstance(jLabel3.getWidth(), jLabel3.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i3 = new ImageIcon(vase2);
+        jLabel3.setIcon(i3);
+        
+        ImageIcon myimage4 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("wreath.jpg")));
+        Image wreath = myimage4.getImage();
+        Image wreath2 = wreath.getScaledInstance(jLabel4.getWidth(), jLabel4.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i4 = new ImageIcon(wreath2);
+        jLabel4.setIcon(i4);
+        
+        ImageIcon myimage5 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("rose.jpg")));
+        Image rose = myimage5.getImage();
+        Image rose2 = rose.getScaledInstance(jLabel7.getWidth(), jLabel7.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i5 = new ImageIcon(rose2);
+        jLabel7.setIcon(i5);
+        
+        ImageIcon myimage6 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("sunflower.jpg")));
+        Image sunflower = myimage6.getImage();
+        Image sunflower2 = sunflower.getScaledInstance(jLabel8.getWidth(), jLabel8.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i6 = new ImageIcon(sunflower2);
+        jLabel8.setIcon(i6);
+        
+        ImageIcon myimage7 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("carnation.jpg")));
+        Image carnation = myimage7.getImage();
+        Image carnation2 = carnation.getScaledInstance(jLabel9.getWidth(), jLabel9.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i7 = new ImageIcon(carnation2);
+        jLabel9.setIcon(i7);
+        
+        ImageIcon myimage8 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("violet.jpg")));
+        Image violet = myimage8.getImage();
+        Image violet2 = violet.getScaledInstance(jLabel10.getWidth(), jLabel10.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i8 = new ImageIcon(violet2);
+        jLabel10.setIcon(i8);
+        
+        ImageIcon myimage9 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("bear.jpg")));
+        Image bear = myimage9.getImage();
+        Image bear2 = bear.getScaledInstance(jLabel12.getWidth(), jLabel12.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i9 = new ImageIcon(bear2);
+        jLabel12.setIcon(i9);
+        
+        ImageIcon myimage10 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("hello kitty.jpg")));
+        Image hello = myimage10.getImage();
+        Image hello2 = hello.getScaledInstance(jLabel13.getWidth(), jLabel13.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i10 = new ImageIcon(hello2);
+        jLabel13.setIcon(i10);
+        
+        ImageIcon myimage11 = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("WeBareBears.jpg")));
+        Image webear = myimage11.getImage();
+        Image webear2 = webear.getScaledInstance(jLabel14.getWidth(), jLabel14.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon i11 = new ImageIcon(webear2);
+        jLabel14.setIcon(i11);
+        
+        
+        
+        
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jbgArrangement = new javax.swing.ButtonGroup();
+        jbgSize = new javax.swing.ButtonGroup();
+        jbgFlower = new javax.swing.ButtonGroup();
+        jbgAccessory = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        basket = new javax.swing.JRadioButton();
+        bouquet = new javax.swing.JRadioButton();
+        vase = new javax.swing.JRadioButton();
+        wreath = new javax.swing.JRadioButton();
+        jLabel6 = new javax.swing.JLabel();
+        small = new javax.swing.JRadioButton();
+        medium = new javax.swing.JRadioButton();
+        large = new javax.swing.JRadioButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        rose = new javax.swing.JRadioButton();
+        sunflower = new javax.swing.JRadioButton();
+        carnation = new javax.swing.JRadioButton();
+        violet = new javax.swing.JRadioButton();
+        jLabel19 = new javax.swing.JLabel();
+        bear = new javax.swing.JRadioButton();
+        helloKitty = new javax.swing.JRadioButton();
+        weBareBears = new javax.swing.JRadioButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Customized Floral Arrangements");
+        setSize(new java.awt.Dimension(800, 700));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel5.setText("Flower Arrangement Style:");
+
+        jbgArrangement.add(basket);
+        basket.setText("Flower Basket");
+
+        jbgArrangement.add(bouquet);
+        bouquet.setText("Flower Bouquet");
+
+        jbgArrangement.add(vase);
+        vase.setText("Flower Vase");
+
+        jbgArrangement.add(wreath);
+        wreath.setText("Flower Wreath");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel6.setText("Size:");
+
+        jbgSize.add(small);
+        small.setText("Small");
+
+        jbgSize.add(medium);
+        medium.setText("Medium");
+
+        jbgSize.add(large);
+        large.setText("Large");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel11.setText("Flower");
+
+        jbgFlower.add(rose);
+        rose.setText("Rose");
+
+        jbgFlower.add(sunflower);
+        sunflower.setText("Sunflower");
+
+        jbgFlower.add(carnation);
+        carnation.setText("Carnation");
+
+        jbgFlower.add(violet);
+        violet.setText("Violet");
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel19.setText("Accessories:");
+
+        jbgAccessory.add(bear);
+        bear.setText("Teddy Bear");
+
+        jbgAccessory.add(helloKitty);
+        helloKitty.setText("Hello Kitty");
+
+        jbgAccessory.add(weBareBears);
+        weBareBears.setText("We Bare Bears");
+
+        jButton1.setText("Confirm");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("Cancel");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel5))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(28, 28, 28)
+                                        .addComponent(rose)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(sunflower)
+                                        .addGap(65, 65, 65))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton2))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(carnation)
+                                        .addGap(61, 61, 61))
+                                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(35, 35, 35)
+                                .addComponent(violet))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(basket)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(small)
+                                        .addGap(4, 4, 4)
+                                        .addComponent(medium)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(large))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(54, 54, 54)
+                                        .addComponent(bouquet)
+                                        .addGap(56, 56, 56)
+                                        .addComponent(vase))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(33, 33, 33)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton1)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(bear)
+                                        .addGap(75, 75, 75)
+                                        .addComponent(helloKitty)
+                                        .addGap(83, 83, 83)
+                                        .addComponent(weBareBears))))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(wreath))
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(basket)
+                    .addComponent(bouquet)
+                    .addComponent(vase)
+                    .addComponent(wreath))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(small)
+                    .addComponent(medium)
+                    .addComponent(large))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(rose)
+                    .addComponent(sunflower)
+                    .addComponent(carnation)
+                    .addComponent(violet))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bear)
+                    .addComponent(helloKitty)
+                    .addComponent(weBareBears)
+                    .addComponent(jLabel19))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //if(arrangement.isSelected(null)){
+            
+            basket.setActionCommand("Flower Basket");
+            bouquet.setActionCommand("Flower Bouquet");
+            vase.setActionCommand("Flower Vase");
+            wreath.setActionCommand("Flower Wreath");
+            
+            small.setActionCommand("Small");
+            medium.setActionCommand("Medium");
+            large.setActionCommand("Large");
+            
+            rose.setActionCommand("Rose");
+            sunflower.setActionCommand("Sunflower");
+            carnation.setActionCommand("Carnation");
+            violet.setActionCommand("Violet");
+            
+            bear.setActionCommand("Teddy Bear");
+            helloKitty.setActionCommand("Hello Kitty");
+            weBareBears.setActionCommand("We Bare Bear");
+            
+            String style = jbgArrangement.getSelection().getActionCommand();
+            String flower = jbgFlower.getSelection().getActionCommand();
+            String size = jbgSize.getSelection().getActionCommand();
+            String accessory = jbgAccessory.getSelection().getActionCommand();
+            int ans = JOptionPane.showConfirmDialog(null, "Please check your order." +"\n"+ "Arrangement Style: " + style +"\n" +"Flower: " + flower + "\n" + "Size: " + size +"\n" + "Accessory: "+ accessory +"\n"+"Are you sure? ");
+            if(ans == JOptionPane.YES_OPTION){
+                try{
+                FileWriter fw = new FileWriter("order.txt", true);
+                fw.write("Arrangement Style: " + style + " " + flower + " " + size + " " + accessory);
+                fw.write(System.getProperty("line.separator"));
+                fw.write("Flower: "+flower);
+                fw.write(System.getProperty("line.separator"));
+                fw.write("Size: " + size);
+                fw.write(System.getProperty("line.separator"));
+                fw.write("Accessory" + accessory);
+                fw.write(System.getProperty("line.separator"));
+                fw.close();
+                JOptionPane.showMessageDialog(rootPane, "Success");
+                
+            }catch (IOException ex){
+                JOptionPane.showMessageDialog(rootPane, "Error");
+            }
+            }
+            
+        //}
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        jbgArrangement.clearSelection();
+        jbgSize.clearSelection();
+        jbgFlower.clearSelection();
+        jbgAccessory.clearSelection();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(SelectArrangement.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(SelectArrangement.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(SelectArrangement.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(SelectArrangement.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new SelectArrangement().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton basket;
+    private javax.swing.JRadioButton bear;
+    private javax.swing.JRadioButton bouquet;
+    private javax.swing.JRadioButton carnation;
+    private javax.swing.JRadioButton helloKitty;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.ButtonGroup jbgAccessory;
+    private javax.swing.ButtonGroup jbgArrangement;
+    private javax.swing.ButtonGroup jbgFlower;
+    private javax.swing.ButtonGroup jbgSize;
+    private javax.swing.JRadioButton large;
+    private javax.swing.JRadioButton medium;
+    private javax.swing.JRadioButton rose;
+    private javax.swing.JRadioButton small;
+    private javax.swing.JRadioButton sunflower;
+    private javax.swing.JRadioButton vase;
+    private javax.swing.JRadioButton violet;
+    private javax.swing.JRadioButton weBareBears;
+    private javax.swing.JRadioButton wreath;
+    // End of variables declaration//GEN-END:variables
+}
