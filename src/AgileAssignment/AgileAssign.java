@@ -7,8 +7,15 @@ package AgileAssignment;
 
 /**
  *
- * @author Jian
+ * @author a
  */
-public class AgileAssignment {
+public class AgileAssign {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
 }
